@@ -22,11 +22,11 @@ const Dashboard = () => {
   }
 
   return (
-    <DefaultLayout>
+    <>
       <h1 className='text-3xl'>Dashboard</h1>
       <Button variant='secondary' onClick={homeHandler}>Home</Button>
       <Button onClick={checkProductsHandler}>Check Products</Button>
-    </DefaultLayout>
+    </>
   )
 }
 
