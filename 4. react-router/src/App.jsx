@@ -1,10 +1,17 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl">Hello World</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   )
 }
 
