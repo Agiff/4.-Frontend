@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import DefaultLayout from "./layouts/DefaultLayout";
 import ProductLayout from "./layouts/ProductLayout";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </Route>
         <Route path="/products" element={<ProductLayout />}>
           <Route index element={<Home />} />
+          <Route path=":productId" element={<ProductDetails />} />
         </Route>
       </Routes>
     </Router>
