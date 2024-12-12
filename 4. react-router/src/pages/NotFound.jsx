@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../components/Button'
-import DefaultLayout from '../layouts/DefaultLayout'
 import { NavLink } from 'react-router'
 
 const NotFound = () => {

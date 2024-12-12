@@ -1,5 +1,4 @@
 import React from 'react'
-import DefaultLayout from '../layouts/DefaultLayout'
 import Button from '../components/Button'
 import { useNavigate } from 'react-router'
 import axios from 'axios';
